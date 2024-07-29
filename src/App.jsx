@@ -46,7 +46,7 @@ const App = () => {
       <Testimonials/>
       <BlogsComp/>
       <Footer/>
-      <WhatsAppButton phoneNumber="8080124607" message="Welcome to bg technology, How we can help you" />
+      <WhatsAppButton phoneNumber="+91 8080124607" message="Welcome to bg technology, How we can help you" />
     </div>
   )
 }
