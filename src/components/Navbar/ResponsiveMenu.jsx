@@ -7,7 +7,7 @@ const ResponsiveMenu = ({showMenu}) => {
   return (
     <div className={`${
         showMenu ? "left-0" : "left-[-100%]"
-    } fixed bottom-0 top-0 w-[75%] transition-all duration-300 shadow-md pt-16 px-8 bg-white dark:bg-gray-900 z-50 flex flex-col justify-between pb-4`} >
+    } fixed bottom-0 top-0 w-[75%] transition-all duration-300 shadow-md pt-16 px-8 bg-white text-black dark:text-white dark:bg-gray-900 z-50 flex flex-col justify-between pb-4`} >
 
      <div className='card'>
 
@@ -17,7 +17,7 @@ const ResponsiveMenu = ({showMenu}) => {
        <div>
 
        
-        <h1>User</h1>
+        <h1 className=''>User</h1>
         <h1 className='text-sm text-slate-500'>Bg Technology</h1>
      </div>
     </div>

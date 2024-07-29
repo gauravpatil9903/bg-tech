@@ -1,38 +1,36 @@
-import React , {useState, useEffect} from 'react';
-import {BiSolidSun , BiSolidMoon} from 'react-icons/bi';
+import React, { useState, useEffect } from 'react';
+import { BiSolidSun, BiSolidMoon } from 'react-icons/bi';
 
 const DarkMode = () => {
-
-
-    const [theme, setTheme] = useState(
-        localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-    );
-
-    const element = document.documentElement;
+    const [theme, setTheme] = useState(() => {
+        // Get theme from localStorage or default to "dark" change it after update by default dark mode
+        const storedTheme = localStorage.getItem("theme");
+        return storedTheme ? storedTheme : "dark";
+    });
 
     useEffect(() => {
-        if(theme === "dark"){
+        const element = document.documentElement;
+
+        // Apply dark mode if theme is "dark"
+        if (theme === "dark") {
             element.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        }else {
+        } else {
             element.classList.remove("dark");
-            localStorage.setItem("theme", "light");
         }
-    })
 
-  return (
-    <>
+       
+        localStorage.setItem("theme", theme);
+    }, [theme]);
 
-        {theme === "dark" ? (
-            <BiSolidSun onClick={() => setTheme("light")}  className='text-2xl'/>
-            ) :(
-                <BiSolidMoon onClick={() => setTheme("dark")}  className='text-2xl'/>
-            ) 
-        }
-     
-    
-    </>
-  )
+    return (
+        <>
+            {theme === "dark" ? (
+                <BiSolidSun onClick={() => setTheme("light")} className='text-2xl' />
+            ) : (
+                <BiSolidMoon onClick={() => setTheme("dark")} className='text-2xl' />
+            )}
+        </>
+    );
 }
 
-export default DarkMode
+export default DarkMode;

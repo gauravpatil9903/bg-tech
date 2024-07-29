@@ -3,24 +3,36 @@ export default {
   content: [
     "./index.html", "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  darkMode: 'class', // This enables dark mode based on a class
   theme: {
     extend: {
-      fontFamily:{
-        poppins :["Poppins","sans-Config"],
+      fontFamily: {
+        playfair: ['Playfair Display', 'serif'],
+        lora: ['Lora', 'serif'],
+        merriweather: ['Merriweather', 'serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+        cinzel: ['Cinzel', 'serif'],
+        oswald: ['Oswald', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
+        abril: ['Abril Fatface', 'serif'],
+        // robotoSlab: ['Roboto Slab', 'serif'],
+       
+        // titlefont: ["Playfair Display", "serif"],
       },
-      colors:{
-        primary: "#615C3D"
+      colors: {
+        primary: "#615C3D",
+        navbarLight : "#1F2836" //#AAD7D9
       },
-      container:{
+      container: {
         center: true,
-        padding:{
-          default : "1rem",
-          sm : "3rem",
+        padding: {
+          default: "1rem",
+          sm: "3rem",
         },
       }
     },
   },
   plugins: [],
 }
-

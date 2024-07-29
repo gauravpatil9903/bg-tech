@@ -1,6 +1,19 @@
 import React from 'react';
 import HeroImg from '../../assets/website/herobg_2.webp';
 
+// const heroTitleStyle = {
+//   fontFamily: 'Playfair Display, serif', // For "Welcome to"
+//   fontWeight: 'bold',
+//   fontSize: '2.5rem', // Adjust as needed
+// };
+
+// const spanStyle = {
+//   fontFamily: 'Poppins, sans-serif', // For "BG Technology"
+//   color: '#615C3D', // Apply your primary color
+//   fontWeight: 'bold', // Optional: make it bolder
+//   fontSize: '3rem', // Optional: adjust the size
+// };
+
 const Hero = () => {
   return (
     <>
@@ -13,12 +26,27 @@ const Hero = () => {
             </div>
             {/* text content  */}
             <div className='space-y-5 order-2 sm:order-1 px-4 sm:px-0'> {/* Adjust padding for mobile */}
-              <h1
+              {/* <h1
               data-aos="fade-up" 
               className='text-4xl sm:text-5xl font-semibold'>
-                Welcome to <span className='text-primary'>BG Technology</span>
-              </h1>
-              <p data-aos="fade-up" data-aos-delay = "300" >
+                Welcome to <span className='text-primary font-poppins '>BG Technology</span>
+              </h1> */}
+             <h1 data-aos="fade-up" className='text-4xl sm:text-4xl font-semibold font-playfair'>
+              Welcome to <span className='font-abri text-5xl sm:text-7xl text-primary'>BG Technology</span>
+            </h1>
+            {/* <div className='p-4'>
+      <h1 className='text-4xl font-playfair mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-lora mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-merriweather mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-montserrat mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-raleway mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-cinzel mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-oswald mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-poppins mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-quicksand mb-4'>BG Technology</h1>
+      <h1 className='text-4xl font-abril mb-4'>BG Technology</h1>
+    </div> */}
+              <p data-aos="fade-up" data-aos-delay = "300"  >
               In a rapidly advancing world driven by technology, the need to
                 equip students with essential skills for the future has never
                 been more critical. Recognizing the existing gap in technology

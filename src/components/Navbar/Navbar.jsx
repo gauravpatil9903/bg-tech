@@ -1,8 +1,9 @@
 import React from 'react';
-import Logo from '../../assets/website/Logo.jpeg';
+import Logo from '../../assets/website/bg1.png';
 import DarkMode from './DarkMode';
 import {HiMenuAlt3, HiMenuAlt1} from 'react-icons/hi';
 import ResponsiveMenu from './ResponsiveMenu';
+// import { Link } from "react-router-dom";
 // import { BiExpandHorizontal} from 'react-icons/bi';
 
 export const MenuLinks = [
@@ -14,7 +15,7 @@ export const MenuLinks = [
     {
         id: 2,
         name: "About Us",
-        link: "/#About",
+        link: "/about",
     },
     {
         id: 3,
@@ -37,13 +38,13 @@ const navbar = () => {
     };
   return (
     <>
-    <nav className='bg-white dark:bg-black dark:text-white duration-300'>
+    <nav className='bg-navbarLight text-white dark:bg-black dark:text-white duration-300 '>
         <div className='container py-3 md:py-2'>
             <div className='flex justify-between items-center'>
                 {/* navbar logo section */}  
                 <div>
                
-                <a href="#" className='flex items-center gap-2'>
+                <a href="#" className='flex items-center gap-2 '>
                 <img src={Logo} alt="Logo" className='w-9' />
                 <span className='text-2xl sm:text-3xl font-semibold'>BG Technology</span>
                 
@@ -62,6 +63,7 @@ const navbar = () => {
                                     href="#" 
                                     className='text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-all duration-300'
                                     >{name}</a>
+                                    
                                      </li>
                             );
                         })}
@@ -72,7 +74,7 @@ const navbar = () => {
                 </div>
 
                 {/* Mobile view */}
-                <div className='flex items-center fap-4 md:hidden'>
+                <div className='flex items-center fap-4 md:hidden '>
                     <DarkMode/>
 
                     { showMenu ? (
