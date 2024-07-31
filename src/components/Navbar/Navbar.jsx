@@ -1,5 +1,6 @@
 import React from 'react';
-import Logo from '../../assets/website/bg1.png';
+import Logo from '../../assets/website/bgnewlogo.png';
+import namelogo from '../../assets/website/bgname.png';
 import DarkMode from './DarkMode';
 import {HiMenuAlt3, HiMenuAlt1} from 'react-icons/hi';
 import ResponsiveMenu from './ResponsiveMenu';
@@ -39,14 +40,15 @@ const navbar = () => {
   return (
     <>
     <nav className='bg-navbarLight text-white dark:bg-black dark:text-white duration-300 '>
-        <div className='container py-3 md:py-2'>
+        <div className='container py-0 md:py-2 md:pb-0 '>
             <div className='flex justify-between items-center'>
                 {/* navbar logo section */}  
                 <div>
                
-                <a href="#" className='flex items-center gap-2 '>
-                <img src={Logo} alt="Logo" className='w-9' />
-                <span className='text-2xl sm:text-3xl font-semibold'>BG Technology</span>
+                <a href="#" className='flex items-center md:gap-6 '>
+                <img src={Logo} alt="Logo" className='w-14 md:scale-x-150 md:scale-y-150' />
+                <img src={namelogo} alt="Logo" className='w-14 md:scale-x-150 md:scale-y-150' />
+                {/* <span className='text-2xl sm:text-3xl font-semibold'>BG Technology</span> */}
                 
                 </a>
                    

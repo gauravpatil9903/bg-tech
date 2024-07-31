@@ -1,5 +1,6 @@
 import React from 'react';
 import {FaUserCircle} from 'react-icons/fa';
+import Logo from '../../assets/website/bgnewlogo.png';
 import { MenuLinks } from './Navbar';
 // import BiExpandHorizontal from './menu'
 
@@ -12,7 +13,8 @@ const ResponsiveMenu = ({showMenu}) => {
      <div className='card'>
 
         <div className='flex items-center justify-start gap-3'>
-            <FaUserCircle  size={50}/>
+            {/* <FaUserCircle  size={50}/> */}
+            <img src={Logo} alt="Logo" className='w-14 h-auto' />
 
        <div>
 
