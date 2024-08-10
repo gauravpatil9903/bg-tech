@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <>
       <main className='bg-white dark:bg-gray-950 dark:text-white duration-300'>
-        <div className="container min-h-[480px]  flex mt-0 pb-9 ">
+        <div className="container min-h-[480px]  flex mt-0 pb-12 ">
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-0 place-items-center'> {/* Responsive gap */}
             {/* image section  */}
             <div data-aos = "zoom-in" className='order-1 sm:order-2 relative mb-4'> {/* Adjust margin for mobile */}

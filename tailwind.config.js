@@ -22,8 +22,8 @@ export default {
         // titlefont: ["Playfair Display", "serif"],
       },
       colors: {
-        primary: "#615C3D",
-        navbarLight : "#1F2836" //#AAD7D9
+        primary:   "#4D91A8",  //"#615C3D",
+        navbarLight : "black" //#AAD7D9
       },
       container: {
         center: true,

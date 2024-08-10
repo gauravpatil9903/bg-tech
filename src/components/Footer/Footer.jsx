@@ -70,21 +70,7 @@ const Footer = () => {
                     </p>
                     <br/>
 
-                    {/* social handle  */}
-                    <div className='flex text-center gap-4 mt-6'>
-                        <a href="#">
-                            <FaInstagram className='text-2xl hover:text-primary duration-300'/>
-                        </a>
-                        <a href="#">
-                        <FaFacebook className='text-2xl hover:text-primary duration-300'/>
-                        </a>
-                        <a href="#">
-                        <FaLinkedin className='text-2xl hover:text-primary duration-300'/>
-                        </a>
-                        <a href="#">
-                        <FaTwitter className='text-2xl hover:text-primary duration-300'/>
-                        </a>
-                    </div>
+
                 </div>
                 {/* link section  */}
                 <div className='grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10'>
@@ -125,6 +111,22 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
+
+                             {/* social handle  */}
+                    <div className='flex text-center gap-4 mt-6'>
+                        <a href="#">
+                            <FaInstagram className='text-2xl hover:text-primary duration-300'/>
+                        </a>
+                        <a href="#">
+                        <FaFacebook className='text-2xl hover:text-primary duration-300'/>
+                        </a>
+                        <a href="#">
+                        <FaLinkedin className='text-2xl hover:text-primary duration-300'/>
+                        </a>
+                        <a href="#">
+                        <FaTwitter className='text-2xl hover:text-primary duration-300'/>
+                        </a>
+                    </div>
                         </div>
                     </div>
                 </div>
