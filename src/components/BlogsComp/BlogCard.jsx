@@ -6,8 +6,8 @@ const BlogCard = ({image , title , description, aosDelay}) => {
     <>
     <div data-aos = "fade-up" data-aos-delay = {aosDelay} className='dark:text-white group'>
         <div className='overflow-hidden'>
-            <img src={image} alt="" className='mx-auto h-[420px] w-full object-cover group-hover:scale-105 duration-300'/>
-            <div className='space-y-2 p-4 ml-6 bg-white dark:bg-slate-950 -translate-y-16'>
+            <img src={image} alt="" className='mx-auto h-[420px] w-full object-cover group-hover:scale-105 duration-300 rounded-xl'/>
+            <div className='space-y-2 p-4 ml-6 bg-white dark:bg-slate-950 -translate-y-16 rounded-xl'>
                 <h1 className=' line-clamp-1 text-2xl font-semibold'>
                     {title}
                 </h1>

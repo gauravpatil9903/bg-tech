@@ -23,7 +23,7 @@ export default {
       },
       colors: {
         primary:   "#4D91A8",  //"#615C3D",
-        navbarLight : "black" //#AAD7D9
+        navbarLight : "white" //#AAD7D9
       },
       container: {
         center: true,

@@ -37,20 +37,20 @@ const BlogsData = [
 const BlogsComp = () => {
   return (
     <>
-    <div className='bg-gray-100 dark:bg-gray-900 dark:text-white py-10 pb-14'>
-        <div className='container'>
-            <h1 data-aos = "fade-up" className='my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-semibold'>
+    <div className='bg-gray-100 dark:bg-gray-900 dark:text-white py-10 pb-14 '>
+        <div className='container '>
+            <h1 data-aos = "fade-up" className='my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-semibold '>
                 Our Projects
             </h1>
             {/* blogs card  */}
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  '>
             {
                 BlogsData.map((blog) => (
                     <BlogCard  key={blog.id}  {...blog}/>
                 ))
             }
             </div>
-            <div data-aos = "fade-up" data-aos-offset = "0" className='text-center'>
+            <div data-aos = "fade-up" data-aos-offset = "0" className='text-center '>
                 <button className='btn-primary'>View All Projects</button>
             </div>
             

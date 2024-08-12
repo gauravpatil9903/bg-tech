@@ -39,7 +39,7 @@ const navbar = () => {
     };
   return (
     <>
-    <nav className='bg-navbarLight text-white dark:bg-black dark:text-white duration-300 '>
+    <nav className='bg-navbarLight text-black dark:bg-black dark:text-white duration-200 '>
         <div className='container py-0 md:py-2 md:pb-0 '>
             <div className='flex justify-between items-center'>
                 {/* navbar logo section */}  
