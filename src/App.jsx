@@ -8,6 +8,11 @@ import Footer from './components/Footer/Footer.jsx';
 import Testimonials from './components/Testimonials/Testimonials.jsx';
 import DarkMode from './components/Navbar/DarkMode';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
+import RoboticsService from './components/Services/RoboticsService.jsx';
+import IndustrialAutomation from './components/Services/IndustrialAutomation.jsx';
+import ThreeDpriting from './components/Services/TDpriting.jsx';
+import WebDev from './components/Services/WebDev.jsx';
+import LaserCutting from './components/Services/LaserCutting.jsx';
 
 // Import React Router components
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -38,6 +43,11 @@ const App = () => {
           <Route path="/" element={<Hero />} />
           <Route path="/services" element={<Services />} />
           {/* Add more routes as needed */}
+          <Route path='/services/robotics' element={<RoboticsService/>}/>
+          <Route path='/services/automation' element={<IndustrialAutomation/>}/>
+          <Route path='/services/threedprint' element={<ThreeDpriting/>}/>
+          <Route path='/services/webdev' element={<WebDev/>}/>
+          <Route path='/services/lasercutting' element={<LaserCutting/>}/>
         </Routes>
         <BrandLogo />
         <Testimonials />
