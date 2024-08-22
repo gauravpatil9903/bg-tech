@@ -5,7 +5,7 @@ import { MenuLinks } from './Navbar';
 import { Link } from 'react-router-dom';
 // import BiExpandHorizontal from './menu'
 
-const ResponsiveMenu = ({showMenu}) => {
+const ResponsiveMenu = ({showMenu, toggleMenu}) => {
   return (
     <div className={`${
         showMenu ? "left-0" : "left-[-100%]"
@@ -32,7 +32,7 @@ const ResponsiveMenu = ({showMenu}) => {
                  <li key = {id}> 
                  <a href={link} className='mb-5 inline-block'>
                    
-                    <Link to = "/">{name}</Link></a>
+                    <Link to = "/" onClick={toggleMenu}>{name}</Link></a>
                     
                  </li>
                  
@@ -41,7 +41,7 @@ const ResponsiveMenu = ({showMenu}) => {
          })}
         
         
-        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
            {/* Add more links as needed 
            <li><Link to="/">Home</Link></li> */}
     
