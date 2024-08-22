@@ -4,6 +4,7 @@ import namelogo from '../../assets/website/bgname.png';
 import DarkMode from './DarkMode';
 import {HiMenuAlt3, HiMenuAlt1} from 'react-icons/hi';
 import ResponsiveMenu from './ResponsiveMenu';
+import { Link } from 'react-router-dom';
 // import { Link } from "react-router-dom";
 // import { BiExpandHorizontal} from 'react-icons/bi';
 
@@ -16,18 +17,18 @@ export const MenuLinks = [
     {
         id: 2,
         name: "About Us",
-        link: "/about",
+        link: "/#about",
     },
     {
         id: 3,
         name: "Career",
         link: "/#Career",
     },
-    {
-        id: 4,
-        name: "Services",
-        link: "/#Services",
-    },
+    // {
+    //     id: 4,
+    //     name: "Services",
+    //     link: "/#Services",
+    // },
 ]
 
 const navbar = () => {
@@ -64,11 +65,17 @@ const navbar = () => {
                                     <a 
                                     href="#" 
                                     className='text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-all duration-300'
-                                    >{name}</a>
+                                    > <Link to = "/"> {name}</Link></a>
                                     
                                      </li>
                             );
                         })}
+                        <ul>
+        
+                             <li className='curser-pointer py-4 text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-all duration-300 '><Link to="/services">Services</Link></li>
+                                {/* Add more links as needed 
+                                <li><Link to="/">Home</Link></li> */}
+                         </ul>
                         <button className='btn-primary'>Get in touch</button>
 
                         <DarkMode/>

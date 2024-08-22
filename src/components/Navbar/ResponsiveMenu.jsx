@@ -2,6 +2,7 @@ import React from 'react';
 import {FaUserCircle} from 'react-icons/fa';
 import Logo from '../../assets/website/bgnewlogo.png';
 import { MenuLinks } from './Navbar';
+import { Link } from 'react-router-dom';
 // import BiExpandHorizontal from './menu'
 
 const ResponsiveMenu = ({showMenu}) => {
@@ -30,11 +31,20 @@ const ResponsiveMenu = ({showMenu}) => {
              return(
                  <li key = {id}> 
                  <a href={link} className='mb-5 inline-block'>
-                    {" "}
-                    {name}</a>
+                   
+                    <Link to = "/">{name}</Link></a>
+                    
                  </li>
+                 
+                 
              );
          })}
+        
+        
+        <li><Link to="/services">Services</Link></li>
+           {/* Add more links as needed 
+           <li><Link to="/">Home</Link></li> */}
+    
      </ul>
      </nav>
 
